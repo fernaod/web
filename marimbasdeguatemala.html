@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Marimbas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #b4a7d6;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 0 20px;
+      margin-bottom: 40px;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .video {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .video iframe {
+      width: 80%;
+      height: 400px;
+      border-radius: 8px;
+    }
+
+    .formulario {
+      background-color: #f1f1f1;
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto 40px;
+      border-radius: 10px;
+    }
+
+    .formulario label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .formulario input, .formulario select, .formulario button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .formulario button {
+      background-color: #5f77a0;
+      color: white;
+      border: none;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="marimbas gatemaltecas.png" alt="Banner Marimbas">
+  </header>
+
+  <h1> Marimbas guatemaltecas</h1>
+
+  <div class="galeria">
+    <img src="marimbas1.jpg" alt="Marimba 1">
+    <img src="marimbas2.jpg" alt="Marimba 2">
+    <img src="marimbas3.jpg" alt="Marimba 3">
+    <img src="marimbas4.jpg" alt="Marimba 4" width="97%" height="513">
+  </div>
+
+  <div class="video">
+    <iframe src="https://youtu.be/he-wso3DuoM?si=4gSP0TjNBzhp3F1J" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="formulario">
+    <form>
+      <label for="nombre">nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Artur Azevedo">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="artur@virgu.com">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="********">
+
+      <label for="plano">Plan</label>
+      <select id="plano" name="plano">
+        <option value="gratis">Gratis</option>
+        <option value="premium" selected>Premium</option>
+        <option value="pro">Pro</option>
+      </select>
+
+      <button type="submit">Registo</button>
+    </form>
+  </div>
+
+</body>
+</html>
